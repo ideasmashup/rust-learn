@@ -22,17 +22,21 @@ fn main() {
             .expect("Failed to read line");
         
         let guess: u32 = match guess.trim().parse() {
-            Ok(num) => num,
+            Ok(num) => match num {
+                // number within range (good case)
+                MIN_VALUE..=MAX_VALUE => num,
+                _ => {
+                    // number not in range, skip!
+                    println!("You must pick a number between {} and {}!", MIN_VALUE, MAX_VALUE);
+                    continue;
+                }
+            },
             Err(_) => {
-                // NaN
+                // NaN, skip!
+                println!("You must pick a number between {} and {}!", MIN_VALUE, MAX_VALUE);
                 continue;
             }
         };
-
-        match guess {
-            MIN_VALUE..=MAX_VALUE => {/* guess in expected range, do nothing */},
-            _ => println!("You must pick a number between {} and {}!", MIN_VALUE, MAX_VALUE),
-        }
 
         println!("You guessed: {}", guess);
 
