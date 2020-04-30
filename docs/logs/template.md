@@ -19,11 +19,11 @@
 
 (describe methodology followed for this marathon)
 
-### Environment
+**Environment**
 
 (scope of this, which OS, which stack, which tools, bits of context, etc)
 
-### Constraints
+**Constraints**
 
 Finish the whole book in 14 days max, less = better.
 (add anything else)
