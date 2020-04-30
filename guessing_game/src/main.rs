@@ -21,15 +21,20 @@ fn main() {
             .read_line(&mut guess)
             .expect("Failed to read line");
         
-        let err_str = format!("Please type a number between {} and {}!", MIN_VALUE, MAX_VALUE);
-        let guess: u32 = guess.trim().parse().expect(&err_str);
-
-        println!("You guessed: {}", guess);
+        let guess: u32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => {
+                // NaN
+                continue;
+            }
+        };
 
         match guess {
             MIN_VALUE..=MAX_VALUE => {/* guess in expected range, do nothing */},
             _ => println!("You must pick a number between {} and {}!", MIN_VALUE, MAX_VALUE),
         }
+
+        println!("You guessed: {}", guess);
 
         match guess.cmp(&secret) {
             Ordering::Less => println!("Too low!"),
