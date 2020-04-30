@@ -35,12 +35,12 @@ Finish the whole book in 14 days max, less = better.
 
 ### Day 0 : better Windows 10 tools
 
-Because Windows sucks, and I must code on it... I did a couple tweaks to make thing less awful. [I describe them here](docs/logs/rust-learn/day0.md), and did it all the day before starting my actual rush, to be ready for battle when waking up ! ;)
+Because Windows sucks, and I must code on it... I did a couple tweaks to make thing less awful. [I describe them here](rust-learn/day0.md), and did it all the day before starting my actual rush, to be ready for battle when waking up ! ;)
 
 
 ### Day 1 : this day in 5 words
 
-(describe what I did that day) the [detailled log is here](docs/rust-learn/day1.md)
+(describe what I did that day) the [detailled log is here](rust-learn/day1.md)
 
 
 ---
