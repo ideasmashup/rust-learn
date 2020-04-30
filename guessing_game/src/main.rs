@@ -13,28 +13,32 @@ fn main() {
     
     println!("The secret is {}", secret);
 
-    println!("Please input your guess.");
+    loop {
+        println!("Please input your guess:");
+        let mut guess = String::new();
 
-    let mut guess = String::new();
+        io::stdin()
+            .read_line(&mut guess)
+            .expect("Failed to read line");
+        
+        let err_str = format!("Please type a number between {} and {}!", MIN_VALUE, MAX_VALUE);
+        let guess: u32 = guess.trim().parse().expect(&err_str);
 
-    io::stdin()
-        .read_line(&mut guess)
-        .expect("Failed to read line");
-    
-    let err_str = format!("Please type a number between {} and {}!", MIN_VALUE, MAX_VALUE);
-    let guess: u32 = guess.trim().parse().expect(&err_str);
+        println!("You guessed: {}", guess);
 
-    println!("You guessed: {}", guess);
+        match guess {
+            MIN_VALUE..=MAX_VALUE => {/* guess in expected range, do nothing */},
+            _ => println!("You must pick a number between {} and {}!", MIN_VALUE, MAX_VALUE),
+        }
 
-    match guess {
-        MIN_VALUE..=MAX_VALUE => {/* guess in expected range, do nothing */},
-        _ => println!("You must pick a number between {} and {}!", MIN_VALUE, MAX_VALUE),
-    }
-
-    match guess.cmp(&secret) {
-        Ordering::Less => println!("Too low!"),
-        Ordering::Greater => println!("Too high!"),
-        Ordering::Equal => println!("GG! Well played!"),
+        match guess.cmp(&secret) {
+            Ordering::Less => println!("Too low!"),
+            Ordering::Greater => println!("Too high!"),
+            Ordering::Equal => {
+                println!("GG! Well played!");
+                break;
+            }
+        }
     }
 
 }
