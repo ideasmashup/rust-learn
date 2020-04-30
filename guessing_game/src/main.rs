@@ -2,11 +2,14 @@ use std::io;
 use rand::Rng;
 use std::cmp::Ordering;
 
+const MIN_VALUE: u32 = 0;   // min inclusive value
+const MAX_VALUE: u32 = 100; // max inclusive value
+
 fn main() {
     println!("Guess the number!");
 
     let mut rng = rand::thread_rng();
-    let secret: u16 = rng.gen_range(0, 101);
+    let secret = rng.gen_range(MIN_VALUE, MAX_VALUE + 1);
     
     println!("The secret is {}", secret);
 
@@ -18,13 +21,14 @@ fn main() {
         .read_line(&mut guess)
         .expect("Failed to read line");
     
-    let guess: u16 = guess.trim().parse().expect("Please type a number!");
+    let err_str = format!("Please type a number between {} and {}!", MIN_VALUE, MAX_VALUE);
+    let guess: u32 = guess.trim().parse().expect(&err_str);
 
     println!("You guessed: {}", guess);
 
     match guess {
-        0..=100 => {/* guess in expected range, do nothing */},
-        _ => println!("You must pick a number between 0 and 100!"),
+        MIN_VALUE..=MAX_VALUE => {/* guess in expected range, do nothing */},
+        _ => println!("You must pick a number between {} and {}!", MIN_VALUE, MAX_VALUE),
     }
 
     match guess.cmp(&secret) {
