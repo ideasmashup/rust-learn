@@ -37,83 +37,11 @@ Finish the whole book in 14 days max, less = better.
 
 Because Windows sucks, and I must code on it... I did a couple tweaks to make thing less awful. [I describe them here](docs/logs/rust-learn/day0.md), and did it all the day before starting my actual rush, to be ready for battle when waking up ! ;)
 
-Install VScode [https://code.visualstudio.com](https://code.visualstudio.com/), and install all the necessary plugins for this project
-
-- Markdown: [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one), [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
-- Rust: [Rust (rls)](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust)
-- TOML: [Better TOML](https://marketplace.visualstudio.com/items?itemName=bungcip.better-toml)
-- Utilities: [VS Code Counter](https://marketplace.visualstudio.com/items?itemName=uctakeoff.vscode-counter)
-
-<br>
 
 ### Day 1 : this day in 5 words
 
-#### Recap
+(describe what I did that day) the [detailled log is here](docs/rust-learn/day1.md)
 
-- **Goal**
-    - ...
-- **Results**
-    - ...
-
-> Duration: 0 hours
-> Total projects: 0
-> Total lines of code: 0
-
-**What I learned**
-
-- [ ] ...
-- [ ]
-
-**What I need to improve**
-
-- [ ] ...
-- [ ]
-
-**Notes to self**
-
-- ...
-
-**Useful stuff**
-
-- ...
-
-#### Tasks / projects
-
-##### Task / project 1
-
-Quick summary of project or task
-
-> Good :D
-> - ...
-> - ...
-
-> Bad :/
-> - ...
-> - ...
-
-```
-/// example of representative code ?
-```
-
-##### Task / project 2
-
-Quick summary of project or task
-
-> Good :D
-> - ...
-> - ...
-
-> Bad :/
-> - ...
-> - ...
-
-```
-/// example of representative code ?
-```
-
-<br>
-
-(TODO: add extra days here, follow template)
 
 ---
 
