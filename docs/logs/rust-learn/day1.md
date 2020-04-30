@@ -35,18 +35,26 @@
 
 ### Task / project 1
 
-Quick summary of project or task
+Learn how to write a hello world rust program. Compile it with rustc.
 
 > Good :D
-> - ...
-> - ...
+> - super easy and straigth forward
+> - I tried it for fun on Windows, Mac, Linux it's a breeze
+> - compiler is super nice and informative (feels like meeting git "Did you mean?" for the first time again haha)
 
 > Bad :/
-> - ...
-> - ...
+> - nothing
 
-```
-/// example of representative code ?
+
+```bash
+$ mkdir hello_world
+$ cd hello_world
+
+# this works on Windows in cmder o_O
+$ echo fn main() { println!("Hello World"); } > main.rs
+
+$ rustc main.rs
+$ .\main.exe
 ```
 
 ### Task / project 2
