@@ -34,5 +34,25 @@ Install VScode [https://code.visualstudio.com](https://code.visualstudio.com/), 
 - TOML: [Better TOML](https://marketplace.visualstudio.com/items?itemName=bungcip.better-toml)
 - Utilities: [VS Code Counter](https://marketplace.visualstudio.com/items?itemName=uctakeoff.vscode-counter)
 
+### Prepare the coding folder
+
+It's best to create a folder to contain all projects folders and files 
+
+```sh
+$ mkdir rust-learn
+$ git init
+```
+
+Create a ```.gitignore``` file
+```sh
+$ echo **/target > .gitignore
+$ echo **/*.lock >> .gitignore
+$ git add *
+$ git commit -m "init: initial commit for Rust Learn"
+```
+
+You are ready! Just make sure to create all your rust project folder in ```/rust-learn``` and everything will be smooth :)
+
+
 
 [Back to log main page](../rustlang-learn.md)
