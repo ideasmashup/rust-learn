@@ -11,7 +11,7 @@ fn main() {
     let mut rng = rand::thread_rng();
     let secret = rng.gen_range(MIN_VALUE, MAX_VALUE + 1);
     
-    println!("The secret is {}", secret);
+    // println!("The secret is {}", secret);
 
     loop {
         println!("Please input your guess:");
