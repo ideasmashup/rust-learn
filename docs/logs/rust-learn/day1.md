@@ -4,9 +4,9 @@
 
 ## Recap
 
-> Duration: 1 hour
-> Total projects: 2
-> Total lines of code: ~4
+> Duration: 5 hours
+> Total projects: 3
+> Total lines of code: ~59
 
 **What I learned**
 
@@ -14,13 +14,13 @@
 - [x] shadowing of variables
 - [x] random numbers generation
 - [x] user input handling with ```io::stdin::read_line(&mut str_buffer)```
+- [x] range matching and many corner cases for code sample in "guessing game" section
 
 **What I need to improve**
 
 - [x] code without Internet nor doc (because no completion)
 - [ ] deeper knowledge about macros, types compiling, sizes, inference rules
 - [ ] stop digging too deep (too time consuming), just follow the course!
-- [ ] 
 
 **Notes to self**
 
