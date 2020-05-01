@@ -137,8 +137,7 @@ loop {
 }
 
 ```
-```sh
-// Output:
+```
 $ cargo run
 
 Type a "good" value:

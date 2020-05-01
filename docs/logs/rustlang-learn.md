@@ -33,14 +33,17 @@ Finish the whole book in 14 days max, less = better.
 
 ## Devlog
 
-### Day 0 : better Windows 10 tools
+### Day 0: better Windows 10 tools
 
 Because Windows sucks, and I must code on it... I did a couple tweaks to make thing less awful and I did it all the day before starting my actual rush, to be ready for battle when waking up ! ;) [Read more](rust-learn/day0.md)
 
-
-### Day 1 : first dive gone too deep
+### Day 1: first dive gone too deep
 
 I was so focused on understanding the sample for the guessing game I spent the day refactoring it, exploring consts, macros, inference oddities, and a lot of off-topic things. Still it was overall interesting and I think it helped me get a better grasp of trivial things that actually were trickier than expected (```match``` voodoo amongst others)! [Read more](rust-learn/day1.md)
+
+### Day 2: the day in 5 words
+
+Lorem ipsum dolor sit amet. [Read more](rust-learn/day2.md)
 
 
 ---
