@@ -327,4 +327,33 @@ fn main() {
     println!("Values: {}, {}, {}\n", value[0], value[1], value[2]);
 
     // -----
+
+    // STRINGS
+    // strings declarations
+    
+    println!("--- Strings\n");
+
+    let value = "Hi!";
+    println!("Value: {}", value);
+    println!("Specs: {} {} bytes\n", type_of(value), mem::size_of_val(&value));
+
+    let value: &str = "Hi!";
+    println!("Value: {}", value);
+    println!("Specs: {} {} bytes\n", type_of(value), mem::size_of_val(&value));
+
+    let value: [char; 3] = ['H','i','!'];
+    println!("Value: {:?}", value);
+    println!("Specs: {} {} bytes\n", type_of(value), mem::size_of_val(&value));
+
+    let value: [char; 2] = ['H','i'];
+    println!("Value: {:?}", value);
+    println!("Specs: {} {} bytes\n", type_of(value), mem::size_of_val(&value));
+
+    let value: [char; 1] = ['H'];
+    println!("Value: {:?}", value);
+    println!("Specs: {} {} bytes\n", type_of(value), mem::size_of_val(&value));
+
+    let value: char = 'H';
+    println!("Value: {:?}", value);
+    println!("Specs: {} {} bytes\n", type_of(value), mem::size_of_val(&value));
 }
