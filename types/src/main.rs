@@ -200,6 +200,6 @@ fn main() {
     let min = f64::MIN;
     let max = f64::MAX;
 
-    println!("Specs: {} bytes from {} to {}\n", mem::size_of_val(&float), min, max);
+    println!("Specs: f64 {} bytes from {} to {}\n", mem::size_of_val(&float), min, max);
         
 }
