@@ -44,9 +44,12 @@ fn main() {
     // doesn't work the same!
     let x = {
         let y = 5;
-        y + 5; // trailing ';' here messes up the expression value of whole {...} scope
+        y + 5; // trailing ';' here changes this expression into a statement (no returned value !!!)
     };
-    println!("value = {:?}", x);
+    println!("value = {:?} // watch out !", x);
+
+    println!("one = {}", get_one());
+    println!("another = {}", get_another());
 }
 
 fn my_function() {
@@ -56,3 +59,12 @@ fn my_function() {
 fn f2(arg1: i32, arg2: &str) {
     println!("Printing {} and {}", arg1, arg2);
 }
+
+fn get_one() -> i32 {
+    return 1
+}
+
+fn get_another() -> i32 {
+    1
+}
+
