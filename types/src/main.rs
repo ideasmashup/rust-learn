@@ -316,5 +316,15 @@ fn main() {
     println!("Value: {:?}", value);
     println!("Specs: {} {} bytes\n", type_of(value), mem::size_of_val(&value));
 
+    let value = [7; 3];
+    println!("Value: {:?}", value);
+    println!("Specs: {} {} bytes\n", type_of(value), mem::size_of_val(&value));
+
+    let value = ['a', 'b', 'c'];
+    println!("Value: {:?}", value);
+    println!("Specs: {} {} bytes\n", type_of(value), mem::size_of_val(&value));
+
+    println!("Values: {}, {}, {}\n", value[0], value[1], value[2]);
+
     // -----
 }
