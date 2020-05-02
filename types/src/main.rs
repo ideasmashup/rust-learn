@@ -14,8 +14,15 @@ fn main() {
     let int: i8 = 127;
     println!("Value: {}", int);
 
-    let min = i8::min_value();
-    let max = i8::max_value();
+    let min = i8::MIN;
+    let max = i8::MAX;
+
+    /*
+       let min = i8::min_value();
+       let max = i8::max_value();
+
+       // they work too but don't exist for float types (dunno why)
+    */
 
     println!("Specs: {} byte from {} to {}\n", mem::size_of_val(&int), min, max);
 
@@ -27,8 +34,8 @@ fn main() {
     let int: u8 = 255;
     println!("Value: {}", int);
 
-    let min = u8::min_value();
-    let max = u8::max_value();
+    let min = u8::MIN;
+    let max = u8::MAX;
 
     println!("Specs: {} byte from {} to {}\n", mem::size_of_val(&int), min, max);
 
@@ -46,8 +53,8 @@ fn main() {
     let int: i16 = 2048;
     println!("Value: {}", int);
 
-    let min = i16::min_value();
-    let max = i16::max_value();
+    let min = u16::MIN;
+    let max = u16::MAX;
 
     println!("Specs: {} bytes from {} to {}\n", mem::size_of_val(&int), min, max);
     
@@ -65,8 +72,6 @@ fn main() {
     let int: u16 = 65535;
     println!("Value: {}", int);
 
-    let min = u16::min_value();
-    let max = u16::max_value();
 
     println!("Specs: {} bytes from {} to {}\n", mem::size_of_val(&int), min, max);
     
@@ -100,8 +105,8 @@ fn main() {
     let int: usize = 1234567890;
     println!("Value: {}", int);
 
-    let min = usize::min_value();
-    let max = usize::max_value();
+    let min = usize::MIN;
+    let max = usize::MAX;
 
     println!("Specs: {} bytes from {} to {}\n", mem::size_of_val(&int), min, max);
     
@@ -119,8 +124,8 @@ fn main() {
     let int = 170_141_183_460_469_231_731_687_303_715_884_105_727i128;
     println!("Value: {}", int);
 
-    let min = i128::min_value();
-    let max = i128::max_value();
+    let min = i128::MIN;
+    let max = i128::MAX;
 
     println!("Specs: {} bytes from {} to {}\n", mem::size_of_val(&int), min, max);
         
