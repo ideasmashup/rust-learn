@@ -279,4 +279,27 @@ fn main() {
     println!("Specs: char {} bytes\n", mem::size_of_val(&value));
 
     // -----
+
+    println!("--- COMPOUNDS\n");
+
+    // -----
+
+    // TUPLES
+    // tuples declarations
+    
+    println!("--- Tuples\n");
+
+    let value = (10, 20.00, "30");
+    println!("Value: {:?}", value);
+    println!("Specs: {} {} bytes\n", type_of(value), mem::size_of_val(&value));
+
+    let value: (u8, f32, &str) = (11, 22.22, "33");
+    println!("Value: {:?}", value);
+    println!("Specs: {} {} bytes\n", type_of(value), mem::size_of_val(&value));
+
+    let (a, b, c) = value;
+    println!("Values: {}, {}, {}", a, b, c);
+    println!("Values: {}, {}, {}", value.0, value.1, value.2);
+
+    // -----
 }
