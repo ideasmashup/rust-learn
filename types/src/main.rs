@@ -1,12 +1,23 @@
 use std::mem;
+use std::any::type_name;
+
+fn type_of<T>(_: T) -> &'static str {
+    type_name::<T>()
+}
 
 fn main() {
     // types
 
+    println!("\n--- DATA TYPES ---\n");
+
     // INTEGERS
     // integers declarations
     
-    println!("\n--- DATA TYPES ---\n");
+    println!("--- Integers\n");
+
+    let int = 0;
+    println!("Value: {}", int);
+    println!("Specs: {} {} bytes\n", type_of(int), mem::size_of_val(&int));
 
     let int = 127i8;
     println!("Value: {}", int);
