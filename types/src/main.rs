@@ -183,27 +183,29 @@ fn main() {
 
     println!("Specs: i128 {} bytes from {} to {}\n", mem::size_of_val(&int), min, max);
     
+    // -----
+
     // FLOATS
     // floats declarations
     
     println!("--- Floats\n");
 
-    let float = 0.0;
+    let float = 1.0;
     println!("Value: {}", float);
     println!("Specs: {} {} bytes\n", type_of(float), mem::size_of_val(&float));
 
     // -----
     
-    let float: f32 = 12345.6789;
+    let float: f32 = 1.234_567_89;
     println!("Value: {}", float);
 
-    let float: f32 = 12_345.6_789;
+    let float: f32 = 1.234_567_89;
     println!("Value: {}", float);
 
-    let float = 12345.6789f32;
+    let float = 1.23456789f32;
     println!("Value: {}", float);
 
-    let float = 128345.6_789f32;
+    let float = 1.234_567_89f32;
     println!("Value: {}", float);
 
     let min = f32::MIN;
@@ -213,16 +215,16 @@ fn main() {
 
     // -----
 
-    let float: f64 = 12345.6789;
+    let float: f64 = 1.23456789;
     println!("Value: {}", float);
 
-    let float: f64 = 12_345.6_789;
+    let float: f64 = 1.234_567_89;
     println!("Value: {}", float);
 
-    let float = 12345.6789f64;
+    let float = 1.23456789f64;
     println!("Value: {}", float);
 
-    let float = 128345.6_789f64;
+    let float = 1.234_567_89f64;
     println!("Value: {}", float);
 
     let min = f64::MIN;
