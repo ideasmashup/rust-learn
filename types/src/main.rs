@@ -130,4 +130,23 @@ fn main() {
     println!("Specs: {} bytes from {} to {}\n", mem::size_of_val(&int), min, max);
         
     
+    // ------
+
+    let float: f64 = 12345.6789;
+    println!("Value: {}", float);
+
+    let float: f64 = 12_345.6_789;
+    println!("Value: {}", float);
+
+    let float = 1234.56789f64;
+    println!("Value: {}", float);
+
+    let float = 128345.56_789f64;
+    println!("Value: {}", float);
+
+    let min = f64::MIN;
+    let max = f64::MAX;
+
+    println!("Specs: {} bytes from {} to {}\n", mem::size_of_val(&float), min, max);
+        
 }
