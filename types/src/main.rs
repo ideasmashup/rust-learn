@@ -35,7 +35,7 @@ fn main() {
        // they work too but don't exist for value types (dunno why)
     */
 
-    println!("Specs: i8 {} byte from {} to {}", mem::size_of_val(&value), min, max);
+    println!("Specs: i8 {} byte from {} to {}\n", mem::size_of_val(&value), min, max);
 
     // ------
 
