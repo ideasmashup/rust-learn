@@ -27,12 +27,38 @@ You can also install [chocolatey](https://github.com/chocolatey/choco) if you pr
 
 ### How to fix the IDE ?
 
-Install VScode [https://code.visualstudio.com](https://code.visualstudio.com/), and install all the necessary plugins for this project
+**Install VScode** 
+
+Download [https://code.visualstudio.com](https://code.visualstudio.com/), install it.
+
+**Useful extensions**
+
+Search and install the following extensions and whatever else suits your taste (be wary of obsolete/no-longer maintained extensions)
 
 - Markdown: [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one), [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
 - Rust: [Rust (rls)](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust)
 - TOML: [Better TOML](https://marketplace.visualstudio.com/items?itemName=bungcip.better-toml)
 - Utilities: [VS Code Counter](https://marketplace.visualstudio.com/items?itemName=uctakeoff.vscode-counter)
+
+
+**Change built-in Terminal**
+
+Often, starting commander is less comfortable than just using the integrated Terminal panel directly available within VSCode
+
+> **sadly no perfect solution yet** 
+> in some cases integrated bash has proper behavior and in some others cmder is better
+> hopefully one day Windows gets a real shell built-in
+
+- View | Terminal ```Ctrl + ù```
+- From the drop down with default ```1. PowerShell``` pick instead ```1. bash```
+
+Then change the colors...
+  
+- Find a [nice color scheme here](https://glitchbone.github.io/vscode-base16-term/) (my pick was "Twilight")
+- File | Preferences | Settings ```Ctrl + ,```
+- Workbench | Appearance | Color Customizations 
+- Paste your copied scheme into ```settings.json``` and save
+
 
 ### Prepare the coding folder
 
