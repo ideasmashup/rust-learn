@@ -299,7 +299,7 @@ fn main() {
 
     let (a, b, c) = value;
     println!("Values: {}, {}, {}", a, b, c);
-    println!("Values: {}, {}, {}", value.0, value.1, value.2);
+    println!("Values: {}, {}, {}\n", value.0, value.1, value.2);
 
     // -----
 
