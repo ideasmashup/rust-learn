@@ -67,7 +67,7 @@ fn main() {
     let min = i16::MIN;
     let max = i16::MAX;
 
-    println!("Specs: i16 {} bytes from {} to {}\n", mem::size_of_val(&int), min, max);
+    println!("Specs: i16 {} bytes from {} to {}\n", mem::size_of_val(&value), min, max);
     
     // ------
 
@@ -83,7 +83,7 @@ fn main() {
     let min = u16::MIN;
     let max = u16::MAX;
 
-    println!("Specs: u16 {} bytes from {} to {}\n", mem::size_of_val(&int), min, max);
+    println!("Specs: u16 {} bytes from {} to {}\n", mem::size_of_val(&value), min, max);
     
     // ------
 
@@ -102,7 +102,7 @@ fn main() {
     let min = isize::MIN;
     let max = isize::MAX;
 
-    println!("Specs: isize {} bytes from {} to {}\n", mem::size_of_val(&int), min, max);
+    println!("Specs: isize {} bytes from {} to {}\n", mem::size_of_val(&value), min, max);
     
     // ------
 
@@ -121,7 +121,7 @@ fn main() {
     let min = usize::MIN;
     let max = usize::MAX;
 
-    println!("Specs: usize {} bytes from {} to {}\n", mem::size_of_val(&int), min, max);
+    println!("Specs: usize {} bytes from {} to {}\n", mem::size_of_val(&value), min, max);
     
     // ------
 
@@ -143,7 +143,7 @@ fn main() {
     let min = i64::MIN;
     let max = i64::MAX;
 
-    println!("Specs: i64 {} bytes from {} to {}\n", mem::size_of_val(&int), min, max);
+    println!("Specs: i64 {} bytes from {} to {}\n", mem::size_of_val(&value), min, max);
     
     // ------
 
@@ -162,7 +162,7 @@ fn main() {
     let min = u64::MIN;
     let max = u64::MAX;
 
-    println!("Specs: u64 {} bytes from {} to {}\n", mem::size_of_val(&int), min, max);
+    println!("Specs: u64 {} bytes from {} to {}\n", mem::size_of_val(&value), min, max);
     
     // ------
 
@@ -181,7 +181,7 @@ fn main() {
     let min = i128::MIN;
     let max = i128::MAX;
 
-    println!("Specs: i128 {} bytes from {} to {}\n", mem::size_of_val(&int), min, max);
+    println!("Specs: i128 {} bytes from {} to {}\n", mem::size_of_val(&value), min, max);
     
     // -----
 
