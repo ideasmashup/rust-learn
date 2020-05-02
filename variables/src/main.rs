@@ -7,9 +7,9 @@ fn main() {
 
     // shadowing reduces variables names variants for processing/transforms
     let age_str = "28";
-    let age_num = age_str.parse();
+    let age_num = age_str.parse::<u8>();
 
     // becomes...
-    let age = "28"
-    let age = age.parse();
+    let age = "28";
+    let age = age.parse::<u8>();
 }
