@@ -302,4 +302,19 @@ fn main() {
     println!("Values: {}, {}, {}", value.0, value.1, value.2);
 
     // -----
+
+    // ARRAYS
+    // arrays declarations
+    
+    println!("--- Arrays\n");
+
+    let value = [0, 1, 2, 3, 4];
+    println!("Value: {:?}", value);
+    println!("Specs: {} {} bytes -- default inference\n", type_of(value), mem::size_of_val(&value));
+
+    let value: [i8; 5] = [0, 1, 2, 3, 4];
+    println!("Value: {:?}", value);
+    println!("Specs: {} {} bytes\n", type_of(value), mem::size_of_val(&value));
+
+    // -----
 }
