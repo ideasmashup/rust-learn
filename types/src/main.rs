@@ -231,5 +231,25 @@ fn main() {
     let max = f64::MAX;
 
     println!("Specs: f64 {} bytes from {} to {}\n", mem::size_of_val(&float), min, max);
-        
+    
+    // -----
+
+    // BOOLEANS
+    // boolean declarations
+    
+    println!("--- Booleans\n");
+
+    let boolean = true;
+    println!("Value: {}", boolean);
+    println!("Specs: {} {} bytes\n", type_of(boolean), mem::size_of_val(&boolean));
+
+    let boolean = false;
+    println!("Value: {}", boolean);
+    println!("Specs: {} {} bytes\n", type_of(boolean), mem::size_of_val(&boolean));
+
+    let boolean: bool = true || false && true;
+    println!("Value: {}", boolean);
+    println!("Specs: bool {} bytes\n", mem::size_of_val(&boolean));
+
+    // -----
 }
