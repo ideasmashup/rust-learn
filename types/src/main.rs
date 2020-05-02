@@ -17,7 +17,7 @@ fn main() {
 
     let value = 0;
     println!("Value: {}", value);
-    println!("Specs: {} {} bytes\n", type_of(value), mem::size_of_val(&value));
+    println!("Specs: {} {} bytes -- default inference\n", type_of(value), mem::size_of_val(&value));
 
     let value = 127i8;
     println!("Value: {}", value);
@@ -192,7 +192,7 @@ fn main() {
 
     let value = 1.0;
     println!("Value: {}", value);
-    println!("Specs: {} {} bytes\n", type_of(value), mem::size_of_val(&value));
+    println!("Specs: {} {} bytes -- default inference\n", type_of(value), mem::size_of_val(&value));
 
     // -----
     
@@ -291,7 +291,7 @@ fn main() {
 
     let value = (10, 20.00, "30");
     println!("Value: {:?}", value);
-    println!("Specs: {} {} bytes\n", type_of(value), mem::size_of_val(&value));
+    println!("Specs: {} {} bytes -- default inference\n", type_of(value), mem::size_of_val(&value));
 
     let value: (u8, f32, &str) = (11, 22.22, "33");
     println!("Value: {:?}", value);
