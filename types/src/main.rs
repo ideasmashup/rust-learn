@@ -252,4 +252,31 @@ fn main() {
     println!("Specs: bool {} bytes\n", mem::size_of_val(&value));
 
     // -----
+
+    // CHARS
+    // values declarations
+    
+    println!("--- Characters\n");
+
+    let value = 'a';
+    println!("Value: {}", value);
+    println!("Specs: {} {} bytes\n", type_of(value), mem::size_of_val(&value));
+
+    let value = 'A';
+    println!("Value: {}", value);
+    println!("Specs: {} {} bytes\n", type_of(value), mem::size_of_val(&value));
+
+    let value: char = 'à';
+    println!("Value: {}", value);
+    println!("Specs: char {} bytes\n", mem::size_of_val(&value));
+
+    let value: char = '하';
+    println!("Value: {}", value);
+    println!("Specs: char {} bytes\n", mem::size_of_val(&value));
+    
+    let value: char = '😻';
+    println!("Value: {}", value);
+    println!("Specs: char {} bytes\n", mem::size_of_val(&value));
+
+    // -----
 }
