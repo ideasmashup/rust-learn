@@ -6,6 +6,8 @@ fn main() {
     // INTEGERS
     // integers declarations
     
+    println!("\n--- DATA TYPES ---\n");
+
     let int = 127i8;
     println!("Value: {}", int);
 
@@ -15,7 +17,7 @@ fn main() {
     let min = i8::min_value();
     let max = i8::max_value();
 
-    println!("Value: {} (size={}, MIN={}, MAX={})\n", int, "8bits", min, max);
+    println!("Specs: {} byte from {} to {}\n", mem::size_of_val(&int), min, max);
 
     // ------
 
@@ -28,7 +30,7 @@ fn main() {
     let min = u8::min_value();
     let max = u8::max_value();
 
-    println!("Value: {} (size={}, MIN={}, MAX={})\n", int, "8bits", min, max);
+    println!("Specs: {} byte from {} to {}\n", mem::size_of_val(&int), min, max);
 
     // ------
 
@@ -47,7 +49,7 @@ fn main() {
     let min = i16::min_value();
     let max = i16::max_value();
 
-    println!("Value: {} (size={}, MIN={}, MAX={})\n", int, "16bits", min, max);
+    println!("Specs: {} bytes from {} to {}\n", mem::size_of_val(&int), min, max);
     
     // ------
 
@@ -66,7 +68,7 @@ fn main() {
     let min = u16::min_value();
     let max = u16::max_value();
 
-    println!("Value: {} (size={}, MIN={}, MAX={})\n", int, "16bits", min, max);
+    println!("Specs: {} bytes from {} to {}\n", mem::size_of_val(&int), min, max);
     
     // ------
 
@@ -82,7 +84,7 @@ fn main() {
     let min = isize::min_value();
     let max = isize::max_value();
 
-    println!("Value: {} (size={}bits, MIN={}, MAX={})\n", int, mem::size_of::<isize>(), min, max);
+    println!("Specs: {} bytes from {} to {}\n", mem::size_of_val(&int), min, max);
     
     // ------
 
@@ -101,7 +103,7 @@ fn main() {
     let min = usize::min_value();
     let max = usize::max_value();
 
-    println!("Value: {} (size={}bits, MIN={}, MAX={})\n", int, mem::size_of::<usize>(), min, max);
+    println!("Specs: {} bytes from {} to {}\n", mem::size_of_val(&int), min, max);
     
     // ------
 
@@ -120,7 +122,7 @@ fn main() {
     let min = i128::min_value();
     let max = i128::max_value();
 
-    println!("Value: {} (size={}, MIN={}, MAX={})\n", int, "128bits", min, max);
+    println!("Specs: {} bytes from {} to {}\n", mem::size_of_val(&int), min, max);
         
     
 }
