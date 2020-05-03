@@ -104,14 +104,29 @@ fn main() {
             else if index == day {
                 // first item: append to chorus (in reverse - e.g. prepend) without prefix
                 chorus.push_str(&format!("{} {}", counts[index], gifts[index]));
+
+                if day > 1 {
+                    chorus.push_str(", ");
+                }
             }
             else if index == 0 {
-                // last item: " and " then append to chorus (in reverse - e.g. prepend)
+                // last item: prefix " and " then append to chorus (in reverse - e.g. prepend)
                 chorus.push_str(&format!(" and {} {}", counts[index], gifts[index]));
             }
             else {
-                // intermediary item: ", " then append to chorus (in reverse - e.g. prepend)
-                chorus.push_str(&format!(", {} {}", counts[index], gifts[index]));
+                // intermediary item: append to chorus (in reverse - e.g. prepend)
+                if index % 2 == 0 {
+                    // even items get a new line at the end
+                    chorus.push_str(&format!("{} {},\n", counts[index], gifts[index]));
+                }
+                else {
+                    // odd items are on new lines so capitalize them
+                    chorus.push_str(&uppercase_first_letter(&format!("{} {}", counts[index], gifts[index])));
+
+                    if index > 1 {// add trailing ", " before next item unless penultimate item
+                        chorus.push_str(", ");
+                    }
+                }
             }
         }
         println!("{}.", uppercase_first_letter(&chorus.as_str()));
