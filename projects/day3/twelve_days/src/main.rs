@@ -63,8 +63,57 @@ Two turtle doves and a partridge in a pear tree
 
 */
 
+fn uppercase_first_letter(string: &str) -> String {
+    let mut letters = string.chars();
+    match letters.next() {
+        None => String::new(),
+        Some(c) => c.to_uppercase().collect::<String>() + letters.as_str(), // as_str() more optimal by using memcpy for remaining letters
+    }
+}
+
 fn main() {
-    println!("TWELVE DAYS OF CHRISTMAS");
+    let holiday = "christmas";
+    let days = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "nineth", "tenth", "eleventh", "thwelfth"];
+    let counts = ["a", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve"];
+    let gifter = "my true love";
+    let gifts = [
+        "partridge in a pear tree", "turtle doves", "French hens", "calling birds",
+        "gold rings", "geese a laying", "swans a swimming", "maids a milking",
+        "ladies dancing", "lords a leaping", "pipers piping", "drummers drumming"];
 
+    println!("TWELVE DAYS OF {}", holiday.to_uppercase());
+    
+    // Reminder: full chorus for last day
+    /*
+    On the twelfth day of Christmas my true love gave to me
+    Twelve drummers drumming, eleven pipers piping
+    Ten lords a leaping, nine ladies dancing, eight maids a milking
+    Seven swans a swimming, six geese a laying, five gold rings
+    Four calling birds, three French hens
+    Two turtle doves and a partridge in a pear tree
+    */
+    for day in 0..12 {
+        println!("\nOn the {} day of {} {} gave to me", days[day], uppercase_first_letter(holiday), gifter);
 
+        let mut chorus = String::new();
+        for index in (0..=day).rev() {
+            if day == 0 {
+                // chorus of first day
+                chorus.push_str(&format!("{} {}", counts[index], gifts[index]));
+            }
+            else if index == day {
+                // first item: append to chorus (in reverse - e.g. prepend) without prefix
+                chorus.push_str(&format!("{} {}", counts[index], gifts[index]));
+            }
+            else if index == 0 {
+                // last item: " and " then append to chorus (in reverse - e.g. prepend)
+                chorus.push_str(&format!(" and {} {}", counts[index], gifts[index]));
+            }
+            else {
+                // intermediary item: ", " then append to chorus (in reverse - e.g. prepend)
+                chorus.push_str(&format!(", {} {}", counts[index], gifts[index]));
+            }
+        }
+        println!("{}.", uppercase_first_letter(&chorus.as_str()));
+    }
 }
