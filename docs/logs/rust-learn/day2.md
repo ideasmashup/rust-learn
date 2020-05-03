@@ -6,7 +6,8 @@
 
 > Duration: 16 hours
 > Total projects: 5
-> Total lines of code: 298
+> Total lines of code: ~383
+> Total lines of wiki: ~140
 
 **What I learned**
 

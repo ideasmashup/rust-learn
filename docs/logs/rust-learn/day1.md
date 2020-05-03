@@ -4,9 +4,10 @@
 
 ## Recap
 
-> Duration: 5 hours
+> Duration: 8 hours
 > Total projects: 3
-> Total lines of code: ~59
+> Total lines of code: ~43
+> Total lines of wiki: ~160
 
 **What I learned**
 
