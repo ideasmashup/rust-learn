@@ -46,6 +46,10 @@ I was so focused on understanding the sample for the guessing game I spent the d
 Learned the usual suspects of programming in any language: scalar types, tuples, arrays, functions, control flow, loops... boring but needed stuff. I've done these a million times in more languages than I can count. I got frustrated that things like strings are for much later Chapters. I'm thinking of just switching to learning with "Rust By Example". [Read more](rust-learn/day2.md)
 
 
+### Day 3: the day in 5 words
+
+(describe what I did that day in one t(w)o three sentences) [Read more](rust-learn/day3.md)
+
 ---
 
 (TODO: add aftermath here, follow template)
