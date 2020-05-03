@@ -41,9 +41,9 @@ Because Windows sucks, and I must code on it... I did a couple tweaks to make th
 
 I was so focused on understanding the sample for the guessing game I spent the day refactoring it, exploring consts, macros, inference oddities, and a lot of off-topic things. Still it was overall interesting and I think it helped me get a better grasp of trivial things that actually were trickier than expected (```match``` voodoo amongst others)! [Read more](rust-learn/day1.md)
 
-### Day 2: the day in 5 words
+### Day 2: the usual bits are boring
 
-Lorem ipsum dolor sit amet. [Read more](rust-learn/day2.md)
+Learned the usual suspects of programming in any language: scalar types, tuples, arrays, functions, control flow, loops... boring but needed stuff. I've done these a million times in more languages than I can count. I got frustrated that things like strings are for much later Chapters. I'm thinking of just switching to learning with "Rust By Example". [Read more](rust-learn/day2.md)
 
 
 ---
