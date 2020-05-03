@@ -73,7 +73,7 @@ fn uppercase_first_letter(string: &str) -> String {
 
 fn main() {
     let holiday = "christmas";
-    let days = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "nineth", "tenth", "eleventh", "thwelfth"];
+    let days = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "nineth", "tenth", "eleventh", "twelfth"];
     let counts = ["a", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve"];
     let gifter = "my true love";
     let gifts = [
